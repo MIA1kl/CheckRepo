@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/homestyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+
+<!--<div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        <div class="col-12 mt-5">-->
+<!--            <div class="card">-->
+<!--                <div class="card-horizontal">-->
+<!--                    <div th:each="el : ${post}" class="alert alert-info mt-5">-->
+<!--                        <div class="img-square-wrapper">-->
+<!--                            <img th:src="${el.imagesrc}" class="img1"  alt="Card image cap">-->
+<!--                        </div>-->
+<!--                        <div class="card-body">-->
+<!--                            <h3 th:text="${el.title}"/>-->
+<!--                            <p th:text="${el.description}"/>-->
+<!--                            <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="card mt-5">-->
+<!--    <div class="row no-gutters">-->
+<!--        <div th:each="el : ${post}" class="alert alert-info ">-->
+<!--        <div class="col-auto">-->
+<!--                <img th:src="${el.imagesrc}" class="img-fluid" alt="">-->
+<!--        </div>-->
+<!--        <div class="col">-->
+<!--            <div class="card-block px-2">-->
+<!--                <h3 th:text="${el.title}"/>-->
+<!--                <p th:text="${el.description}"/>-->
+<!--                <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>-->
+<!--                <a href="#" class="btn btn-primary">BUTTON</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="album py-5 ">
+    <div class="container">
+
+        <div class="row ">
+            <div class="col">
+                <div th:each="el : ${post}" class="alert1 alert-info mt-5">
+                    <img th:src="${el.imagesrc}" class="bd-placeholder-img card-img-top1"  height=100% />
+                    <h3 th:text="${el.title}"  class="card-title" />
+                    <p th:text="${el.description}" class="card-text" />
+                    <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>
+                    <a href="#" class="btn btn-primary">BUTTON</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>

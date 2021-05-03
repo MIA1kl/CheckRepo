@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home page - Filtered</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header th:insert="blocks/header :: header"></header>
+
+<!--    <main class="img-container">-->
+<!--        <img src="https://image.freepik.com/free-vector/pharmacy-medication-concept-online-drugstore-consultation-and-pills-prescription-people-illustration_169479-293.jpg" alt="">-->
+<!--    </main>-->
+
+    <div class="container ">
+        <div class="row pt-5 ">
+            <div class="col-sm-12 mb-3 mt-5">
+                <input class="form-control me-2" id="txtSearch" onkeyup="myFunction()"  type="text" name="keyword" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-deck mt-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-col-lg-5 " id="myItems">
+                <div th:each="el : ${posts}" class="alert">
+                    <div class="col ">
+                        <img th:src="${el.imagesrc}" class="bd-placeholder-img card-img-top" />
+                        <h3 th:text="${el.title}" class="card-title"/>
+                        <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>
+                        <a th:href="'/home-details/'+${el.id}" class="btn btn-info">See more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:insert="blocks/footer :: footer"></div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+    <script>
+        function myFunction() {
+            var input, filter, cards, cardContainer, h5, title, i;
+            input = document.getElementById("txtSearch");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("myItems");
+            cards = cardContainer.getElementsByClassName("alert");
+            for (i = 0; i < cards.length; i++) {
+                title = cards[i].querySelector(".col h3.card-title");
+                if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
