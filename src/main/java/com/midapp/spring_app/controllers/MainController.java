@@ -1,7 +1,7 @@
 package com.midapp.spring_app.controllers;
 
 import com.midapp.spring_app.models.Post;
-import com.midapp.spring_app.models.PostService;
+import com.midapp.spring_app.services.PostService;
 import com.midapp.spring_app.repo.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 
@@ -36,7 +35,7 @@ public class MainController {
     }
 
     @GetMapping("/homeFiltered")
-    public String homeFiltered(Model model, String keyword) {
+    public String homeFiltered(Model model) {
         Iterable<Post> posts = postRepository.findAll();
         model.addAttribute("posts", posts);
         return "homeFiltered";
@@ -59,5 +58,6 @@ public class MainController {
         model.addAttribute("title","Page about us");
         return "about";
     }
+
 
 }

@@ -24,18 +24,21 @@
         </div>
     </div>
     <div class="container">
-        <div class="card-deck mt-3">
+
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-col-lg-5 " id="myItems">
-                <div th:each="el : ${posts}" class="alert">
+                <div th:each="el : ${posts}" class="card">
                     <div class="col ">
-                        <img th:src="${el.imagesrc}" class="bd-placeholder-img card-img-top" />
-                        <h3 th:text="${el.title}" class="card-title"/>
-                        <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>
-                        <a th:href="'/home-details/'+${el.id}" class="btn btn-info">See more...</a>
+                        <div class="card-body">
+                            <img th:src="${el.imagesrc}" class="bd-placeholder-img card-img-top" />
+
+                            <h3 th:text="${el.title}" class="card-title"/>
+                            <p> <b>Price:</b> <span th:text="${el.price}"/> $</p>
+                            <a th:href="'/home-details/'+${el.id}" class="btn btn-info">See more...</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 
     <div th:insert="blocks/footer :: footer"></div>
@@ -47,9 +50,9 @@
             input = document.getElementById("txtSearch");
             filter = input.value.toUpperCase();
             cardContainer = document.getElementById("myItems");
-            cards = cardContainer.getElementsByClassName("alert");
+            cards = cardContainer.getElementsByClassName("card");
             for (i = 0; i < cards.length; i++) {
-                title = cards[i].querySelector(".col h3.card-title");
+                title = cards[i].querySelector(".card-body h3.card-title");
                 if (title.innerText.toUpperCase().indexOf(filter) > -1) {
                     cards[i].style.display = "";
                 } else {

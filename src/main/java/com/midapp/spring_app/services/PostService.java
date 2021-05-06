@@ -1,5 +1,6 @@
-package com.midapp.spring_app.models;
+package com.midapp.spring_app.services;
 
+import com.midapp.spring_app.models.Post;
 import com.midapp.spring_app.repo.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
