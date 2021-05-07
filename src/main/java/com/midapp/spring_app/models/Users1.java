@@ -6,24 +6,35 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Users {
+public class Users1 {
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private int id;
 
     private String username;
     private String password;
+    private String firstname;
+    private String lastname;
+    private String img;
 
-    public Users() {
+    public Users1() {
     }
 
-    public Users(String username, String password) {
+    public Users1(String username, String password, String img) {
         this.username=username;
         this.password=password;
+        this.img=img;
 
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public int getId() {
         return id;

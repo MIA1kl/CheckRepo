@@ -1,7 +1,7 @@
 package com.midapp.spring_app.services;
 
 
-import com.midapp.spring_app.models.Users;
+import com.midapp.spring_app.models.Users1;
 import com.midapp.spring_app.models.UserPrincipal;
 import com.midapp.spring_app.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +16,12 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Users user = userRepository.findByUsername(username);
+        Users1 user1 = userRepository.findByUsername(username);
 
-        if(user == null) {
+        if(user1 == null) {
             throw new UsernameNotFoundException("User not found!");
         }
 
-        return new UserPrincipal(user);
+        return new UserPrincipal(user1);
     }
 }

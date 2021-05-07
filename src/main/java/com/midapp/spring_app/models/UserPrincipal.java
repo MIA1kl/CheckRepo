@@ -9,12 +9,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class UserPrincipal implements UserDetails {
 
-    private Users users;
+    private Users1 users1;
 
 
 
-    public UserPrincipal(Users users) {
-        this.users = users;
+    public UserPrincipal(Users1 users1) {
+        this.users1 = users1;
     }
 
     @Override
@@ -25,13 +25,13 @@ public class UserPrincipal implements UserDetails {
     @Override
     public String getPassword() {
         // TODO Auto-generated method stub
-        return users.getPassword();
+        return users1.getPassword();
     }
 
     @Override
     public String getUsername() {
         // TODO Auto-generated method stub
-        return users.getUsername();
+        return users1.getUsername();
     }
 
     @Override
