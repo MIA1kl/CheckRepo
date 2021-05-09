@@ -8,7 +8,9 @@
 Pharmacy catalogs are used so that the customer can find out the availability of the desired product and its price without leaving the house. Also, you can register and your medicines, so that other users could see them.
 
 This is the .gif file of the website, but also you can visit the site by yourself:
-[Click here](https://ph-catalogue-cs204.herokuapp.com) to see the project on Heroku
+
+[Click here](https://ph-catalogue-cs204.herokuapp.com) to see the project on [Heroku](https://ph-catalogue-cs204.herokuapp.com)
+
 [Click here](https://www.figma.com/file/3MhvMlqbuy4BIjmF9jonBY/Pharmacy-Catalogue?node-id=0%3A1) to see the design of the project on [figma.](https://www.figma.com/file/3MhvMlqbuy4BIjmF9jonBY/Pharmacy-Catalogue?node-id=0%3A1)
 
 ![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker.gif)
