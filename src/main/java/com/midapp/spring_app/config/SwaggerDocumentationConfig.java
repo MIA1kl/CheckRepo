@@ -20,8 +20,6 @@ public class SwaggerDocumentationConfig {
                 .license("MIT")
                 .licenseUrl("https://mit-license.org/")
                 .version("0.0.1")
-                .contact(new Contact("Fatima Bekmamatova", "https://github.com/Fattijenishbek", "fatima.bekmamatova@iaau.edu.kg"))
-                .contact(new Contact("Natalia Klimareva", "https://github.com/MIA1kl", "natalia.klimareva@iaau.edu.kg"))
                 .build();
     }
 

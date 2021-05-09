@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.RedirectView;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-@RestController
+@Controller
 public class UserController {
 
     @Autowired private UserService userService;

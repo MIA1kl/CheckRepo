@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @EnableSwagger2
-@RestController
+@Controller
 public class MainController {
     @Autowired
     private PostRepository postRepository;
