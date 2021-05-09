@@ -16,7 +16,8 @@ User page:
 
 If you try to access not existing address, following "Not Found" page appears
 
-<img src="https://github.com/MIA1kl/Pharmacy_Catalogue/blob/master/images/2021-03-19_01-45-02.png" /> 
+![Screenshot from 2021-05-09 20-46-32](https://user-images.githubusercontent.com/57977808/117576413-b5ec9400-b107-11eb-940e-fc65bf709a03.png)
+ 
 
 ## API Description:
 
