@@ -12,7 +12,7 @@ This is the .gif of the website, but also you can visit the site by yourself: [C
 ![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker.gif)
 
 User page:
-[Screenshot from 2021-05-09 20-39-56](https://user-images.githubusercontent.com/57977808/117576245-ff88af00-b106-11eb-8859-49cb86f4075c.png)
+![Screenshot from 2021-05-09 20-39-56](https://user-images.githubusercontent.com/57977808/117576245-ff88af00-b106-11eb-8859-49cb86f4075c.png)
 
 If you try to access not existing address, following "Not Found" page appears
 
