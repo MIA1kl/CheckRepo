@@ -20,6 +20,9 @@ This is the .gif file of the website, but also you can visit the site by yoursel
 User page:
 ![Screenshot from 2021-05-09 20-39-56](https://user-images.githubusercontent.com/57977808/117576245-ff88af00-b106-11eb-8859-49cb86f4075c.png)
 
+Registration:
+![2021-05-09_23-50-35](https://user-images.githubusercontent.com/57977808/117582064-096bdb80-b122-11eb-8929-f7194596ad79.png)
+
 If you try to access not existing address, following "Not Found" page appears
 
 ![Screenshot from 2021-05-09 20-46-32](https://user-images.githubusercontent.com/57977808/117576413-b5ec9400-b107-11eb-940e-fc65bf709a03.png)
