@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/profileCss.css">
+
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="container bootdey flex-grow-1 container-p-y mt-5">
+
+    <div class="media align-items-center py-5 ">
+        <img src="https://www.materialui.co/materialIcons/action/account_circle_white_180x180.png" alt="" class="d-block ui-w-150 rounded-circle">
+        <div class="media-body ml-4">
+            <h2 class="username" th:text="${#authentication.getPrincipal().getUsername()}">Guest</h2>
+            <a href="javascript:void(0)" class="btn btn-primary btn-info">Edit Profile Image</a>
+            <a href="/login" class="btn btn-primary btn-info">Logout</a>
+
+
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <table class="table user-view-table m-0">
+                <tbody>
+                <tr>
+                    <td>Registered:</td>
+                    <td><span th:text="${#dates.format(#dates.createNow(), 'dd MMM yyyy')}"></span></td>
+                </tr>
+                <tr>
+                    <td>Latest activity:</td>
+                    <td><span th:text="${#dates.format(#dates.createNow(), 'HH:mm')}"></span></td>
+                </tr>
+                <tr>
+                    <td>Verified:</td>
+                    <td><span class="fa fa-check text-primary"></span>&nbsp; Yes</td>
+                </tr>
+                <tr>
+                    <td>Role:</td>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td><span class="badge badge-outline-success">Active</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+
+</div>
+
+<div th:insert="blocks/footer :: footer"></div>
+</body>
+</html>

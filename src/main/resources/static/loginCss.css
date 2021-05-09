@@ -1,0 +1,19 @@
+.btn{
+    background: #07bbaf;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, rgba(7, 187, 175, 1), rgba(109, 31, 158, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgba(7, 187, 175, 1), rgba(109, 31, 158, 1))
+}
+
+#login{
+    background: #07bbaf;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to left, rgba(7, 187, 175, 0.75), rgba(109, 31, 158, 0.75));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to left, rgba(7, 187, 175, 0.75), rgba(109, 31, 158, 0.75))
+}
