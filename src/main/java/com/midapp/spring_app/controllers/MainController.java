@@ -38,7 +38,7 @@ public class MainController {
     public String homeFiltered(Model model) {
         Iterable<Post> posts = postRepository.findAll();
         model.addAttribute("posts", posts);
-        return "homeFiltered";
+        return "home";
     }
 
     @GetMapping("/home-details/{id}")
@@ -59,5 +59,10 @@ public class MainController {
         return "about";
     }
 
+    @GetMapping("/profile")
+    public String profile(Model model) {
+
+        return "Profile";
+    }
 
 }

@@ -18,13 +18,21 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/about">
-                            <img src="https://www.materialui.co/materialIcons/action/shopping_basket_white_192x192.png" alt="" width="35px" height="35px">
+                        <a class="nav-link active" aria-current="page" href="/dev-section">
+                            <img src="https://www.materialui.co/materialIcons/action/settings_white_192x192.png" alt="" width="35px" height="35px">
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Sign in/Sign up</a>
+                        <a class="nav-link active" aria-current="page" href="/profile">
+                            <img alt="" src="https://www.materialui.co/materialIcons/action/account_circle_white_180x180.png" width="35px" height="35px">
+                            <span class="username" th:text="${#authentication.getPrincipal().getUsername()}">Guest</span>
+                        </a>
                     </li>
+
+
+
+
                     <!--                    <li class="nav-item">-->
                     <!--                        <a class="nav-link active" href="/dev-section">For Developer</a>-->
                     <!--                    </li>-->
