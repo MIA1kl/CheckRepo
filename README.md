@@ -18,6 +18,9 @@ If you try to access not existing address, following "Not Found" page appears
 
 ## API Description:
 
+* To register a user: **/register**
+* To login: **/login**
+* To view profile page **/profile**
 * To view all products from database: **/**
 * To view one separated product from database: **/home-details/{id}**
 * To see the page for developer, where you can manipulate with data: **/dev-section**
@@ -25,6 +28,3 @@ If you try to access not existing address, following "Not Found" page appears
 * To view one separated product from database for developer with opportunity edit and delete: **/dev-section/{id}**
 * To edit one separated product by using POST request: **/dev-section/{id}/edit**
 * To delete one separated product by using POST request: **/dev-section/{id}/delete**
-* To register a user: **/register**
-* To login: **/login**
-* To view profile page **/profile**
