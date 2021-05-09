@@ -13,7 +13,7 @@ This is the .gif file of the website, but also you can visit the site by yoursel
 
 [Click here](https://www.figma.com/file/3MhvMlqbuy4BIjmF9jonBY/Pharmacy-Catalogue?node-id=0%3A1) to see the design of the project on [figma.](https://www.figma.com/file/3MhvMlqbuy4BIjmF9jonBY/Pharmacy-Catalogue?node-id=0%3A1)
 
-[Click here](https://com19-app.herokuapp.com/swagger-ui) to see the [swagger](https://com19-app.herokuapp.com/swagger-ui/) documentation.
+[Click here](https://com19-app.herokuapp.com/swagger-ui/) to see the [swagger](https://com19-app.herokuapp.com/swagger-ui/) documentation.
 
 ![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker.gif)
 
