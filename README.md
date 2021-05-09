@@ -9,11 +9,8 @@ Pharmacy catalogs are used so that the customer can find out the availability of
 
 This is the .gif of the website, but also you can visit the site by yourself: [Click here](https://ph-catalogue-cs204.herokuapp.com) to see the project on Heroku
 
-![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker%20(1).gif)
+![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker.gif)
 
-This is the how we implemented the search code:
-
-![Screenshot from 2021-05-06 02-37-44](https://user-images.githubusercontent.com/57977808/117206056-31062f80-ae14-11eb-9df3-49dc04dc1922.png)
 
 If you try to access not existing address, following "Not Found" page appears
 
