@@ -5,12 +5,14 @@
 
 ## Author: Natalia Klimareva and Fatima Bekmamatova COM19-A
 
-Pharmacy catalogs are used so that the customer can find out the availability of the desired product and its price without leaving the house.
+Pharmacy catalogs are used so that the customer can find out the availability of the desired product and its price without leaving the house. Also, you can register and your medicines, so that other users could see them.
 
 This is the .gif of the website, but also you can visit the site by yourself: [Click here](https://ph-catalogue-cs204.herokuapp.com) to see the project on Heroku
 
 ![Alt Text](https://github.com/Fattijenishbek/extra_files/blob/master/ezgif.com-gif-maker.gif)
 
+User page:
+[Screenshot from 2021-05-09 20-39-56](https://user-images.githubusercontent.com/57977808/117576245-ff88af00-b106-11eb-8859-49cb86f4075c.png)
 
 If you try to access not existing address, following "Not Found" page appears
 
