@@ -25,3 +25,6 @@ If you try to access not existing address, following "Not Found" page appears
 * To view one separated product from database for developer with opportunity edit and delete: **/dev-section/{id}**
 * To edit one separated product by using POST request: **/dev-section/{id}/edit**
 * To delete one separated product by using POST request: **/dev-section/{id}/delete**
+* To register a user: **/register**
+* To login: **/login**
+* To view profile page **/profile**
